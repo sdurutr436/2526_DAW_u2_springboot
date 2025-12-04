@@ -8,7 +8,7 @@ on:
 
 env:
   DOCKER_HUB_USERNAME: sdurutr436
-  IMAGE_NAME: springboot-crud-app
+  IMAGE_NAME: aplicacion-springboot-sergio-duran-utrera-2daw-despliegue
 
 jobs:
   push_to_registry:
@@ -26,8 +26,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }} // Añadido secreto en GitHub Actions.
-          password: ${{ secrets.DOCKER_PASSWORD }} // Añadido secreto en GitHub Actions.
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
@@ -37,7 +37,6 @@ jobs:
           tags: |
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha,prefix=
-            type=ref,event=branch
 
       - name: Build and push Docker image
         id: push
