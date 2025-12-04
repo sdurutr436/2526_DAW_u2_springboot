@@ -587,4 +587,8 @@ El enlace a la imagen: https://hub.docker.com/r/sdurutr436/aplicacion-springboot
 #### Conseguido:
 
 - Crear la acción de GitHub que publica las imagenes automáticamente.
-- 
+- Comprobar que la imagen se ha subido a mi Dockerhub.
+
+#### No conseguido:
+
+- Probar la imagen que he subido a Dockerhub.
