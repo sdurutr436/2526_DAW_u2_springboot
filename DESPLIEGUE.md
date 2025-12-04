@@ -42,6 +42,8 @@ https://github.com/sdurutr436/2526_DAW_u2_springboot/blob/824182c453ea74807637b6
 
 https://github.com/sdurutr436/2526_DAW_u2_springboot/blob/824182c453ea74807637b6270d0817216c9a24ef/.github/workflows/docker-image.yml#L52-L58
 
+Esta acción la he rescatado de la documentación tutorial de publicar imagenes Docker: https://docs.github.com/es/actions/tutorials/publish-packages/publish-docker-images
+
 ### Resultado final
 
 Una vez ejecutada la acción correctamente, la imagen estará disponible en Docker Hub en:
@@ -70,6 +72,14 @@ Al entrar vemos lo siguiente:
 ![Secretos en GitHub para el repositorio](./img/secretos_en_github.png)
 
 Podemos o configurar un nuevo entorno o directamente las variables. Al pusar en nueva variable se nos abre un menú modal para introducir el nombre de nuestras variables, en mi caso: ``DOCKER_USERNAME`` y ``DOCKER_PASSWORD`` donde tenemos que añadir nuestro usuario y nuestra contraseña. Como alternativa más segura, podemos generar un token de Dockerhub, lo cual sería más seguro, pero para esta práctica, he decido directamente la contraseña por acortar pasos.
+
+### Configuración necesaria en Dockerhub:
+
+Por supuesto, tenemos que generar un repositorio que esté enlazado a las imágenes para su `push`:
+
+![Creación de repositorio en Dockerhub](./img/creacion_repositorio_dockerhub.png)
+
+El proceso de creación pide un nombre y poco más.
 
 ### Despliegue con GitHub Actions
 
@@ -559,3 +569,22 @@ Metadata
 ```
 
 El final es cerrar el código ya que ha terminado de generar todo.
+
+### Comprobación de la imagen en Dockerhub:
+
+Una vez GitHub da el OK:
+
+![Contenedores completados con éxito](./img/action_completadas_con_exito.png)
+
+Podemos dirigirnos a nuestro repositorio de Docker en Dockerhub para comprobar que se están desplegando correctamente:
+
+![Imagenes correctamente generadas](./img/push_contenedores_docker_en_dockerhub.png)
+
+El enlace a la imagen: https://hub.docker.com/r/sdurutr436/aplicacion-springboot-sergio-duran-utrera-2daw-despliegue
+
+### Estado final de la práctica:
+
+#### Conseguido:
+
+- Crear la acción de GitHub que publica las imagenes automáticamente.
+- 

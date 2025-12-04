@@ -2,7 +2,7 @@
 
 Aplicación web educativa que demuestra cómo desarrollar y desplegar una aplicación Spring Boot utilizando Docker. Este proyecto está diseñado para el módulo de "Despliegue de Aplicaciones Web".
 
-- Acceso a: DESPLIEGUE.md
+- Acceso a: [Enlace a documentación](./DESPLIEGUE.md)
 
 ## 📑 Tabla de Contenidos
 
