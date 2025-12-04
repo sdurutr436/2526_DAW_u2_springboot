@@ -3,7 +3,7 @@ version: '3.8'
 services:
   springboot-crud-app:
     # Nombre del contenedor
-    container_name: springboot-users-crud
+    container_name: springboot-users-crud-sergio-duran-utrera-2daw
     
     # Construir desde el Dockerfile local
     build:
