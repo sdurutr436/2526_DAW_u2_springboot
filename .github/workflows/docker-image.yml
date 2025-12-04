@@ -26,8 +26,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKER_USERNAME }} // Añadido secreto en GitHub Actions
-          password: ${{ secrets.DOCKER_PASSWORD }} // Añadido secreto en GitHub Actions
+          username: ${{ secrets.DOCKER_USERNAME }} // Añadido secreto en GitHub Actions.
+          password: ${{ secrets.DOCKER_PASSWORD }} // Añadido secreto en GitHub Actions.
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
